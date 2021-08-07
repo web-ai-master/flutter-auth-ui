@@ -5,7 +5,7 @@ const BackgroundColor = Color(0xff191720);
 const TextFileFill = Color(0xff1E1C24);
 
 //TextStyles
-const HEadline = TextStyle(
+const Headline = TextStyle(
   color: Colors.white,
   fontSize: 34,
   fontWeight: FontWeight.bold
