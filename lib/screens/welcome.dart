@@ -1,4 +1,5 @@
 import 'package:authui/constant.dart';
+import 'package:authui/screens/register.dart';
 import 'screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +54,14 @@ class WelcomePage extends StatelessWidget {
                       child: MyTextButton(
                         bgColor: Colors.white,
                         buttonName: 'Register',
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            CupertinoPageRoute(
+                              builder: (context) => Register(),
+                            )
+                          );
+                        },
                         textColor: Colors.black87,
                       ),
                     ),
@@ -63,10 +71,11 @@ class WelcomePage extends StatelessWidget {
                         buttonName: 'Sign In',
                         onTap: () {
                           Navigator.push(
-                              context,
-                              CupertinoPageRoute(
-                                builder: (context) => Login(),
-                              ));
+                            context,
+                            CupertinoPageRoute(
+                              builder: (context) => Login(),
+                            )
+                          );
                         },
                         textColor: Colors.white,
                       ),
